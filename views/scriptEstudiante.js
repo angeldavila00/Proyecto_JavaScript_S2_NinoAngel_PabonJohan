@@ -31,10 +31,50 @@ function cerrarModal() {
     modal.innerHTML = '';
 }
 
-//Cerrar modal al hacer clic fuera de él
+//Cerrar modal al hacer clic fuera 
 window.onclick = function(event) {
     const modal = document.querySelector('.modal_general');
     if (event.target === modal) {
         cerrarModal();
     }
+}
+
+
+
+//Funcion de paginas
+
+function irATablero(){
+    setTimeout(() => {
+        window.location.href = './inicio.html';
+    }, 1000);
+}
+
+function irACursos(){
+    setTimeout(() => {
+        window.location.href = '/views/estudiante/cursos.html';
+    }, 1000);
+}
+
+function irAActividades(){
+    setTimeout(() => {
+        window.location.href = '/views/estudiante/actividades.html';
+    }, 1000);
+}
+
+function irAPerfil(){
+    setTimeout(() => {
+        window.location.href = '/views/estudiante/perfil.html';
+    }, 1000);
+}
+
+function volverAtras(){
+    window.history.back();
+}
+
+function verificacion(){
+    alert("Veficación exitosa!")
+}
+
+function guardado(){
+    alert("Guadado Con exito!")
 }

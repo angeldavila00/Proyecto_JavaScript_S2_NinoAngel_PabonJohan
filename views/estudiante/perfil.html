@@ -13,19 +13,75 @@
             <h1>USD API</h1>
         </div>
         <nav>
-            <a href="./inicio.html">Tablero</a>
-            <a href="/views/estudiante/cursos.html">Cursos</a>
-            <a href="/views/estudiante/actividades.html">Actividades</a>
-            <a href="/views/estudiante/perfil.html">Perfil</a>
+            <a href="#" onclick="irATablero()">Tablero</a>
+            <a href="#" onclick="irACursos()">Cursos</a>
+            <a href="#" onclick="irAActividades()">Actividades</a>
+            <a href="#" onclick="irAPerfil()">Perfil</a>
         </nav>
         <div class="perfil" onclick="mostrarModalPerfil()" >
             <img  class="perfile" src="/img/perf.png" alt="iconoPerfil">
             <p>Johan Perez</p>
         </div>
     </header>
+    <button onclick="volverAtras()" class="atras">
+        <img src="/img/atrasSinFondo.jpg" alt="">
+    </button>
+
+    <div class="profile-card">
+        <div class="top-bar">
+            Portal Campers
+        </div>
+        
+        <h1 class="profile-title">Mi Perfil</h1>
+        
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="/img/humanvector.jpg" alt="Foto de perfil">
+            </div>
+            
+            <div class="profile-info">
+                <div class="info-row">
+                    <span class="info-label">Nombre Completo</span>
+                    <span class="info-label">Fecha de nacimiento</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-value">John Doe Pabon</span>
+                    <span class="info-value">20 abr 2006</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Cedula De Ciudadania</span>
+                    <span class="info-label">Estrato</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-value">1005226915</span>
+                    <span class="info-value">4</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <div class="contact-row">
+                <div class="contact-info">
+                    <span class="contact-label">Numero De Celular</span>
+                    <span class="contact-value">3094447893</span>
+                </div>
+                <button onclick="verificacion()" class="btn_perfil">Verificar Numero</button>
+            </div>
+            
+            <div class="contact-row">
+                <div class="contact-info">
+                    <span class="contact-label">Correo Electronico</span>
+                    <span class="contact-value">johnardila00@gmail.com</span>
+                </div>
+                <button onclick="verificacion()" class="btn_perfil">Verificar Correo</button>
+            </div>
+        </div>
+        
+        <button onclick="guardado()" class="btn_Guardar">Guardar</button>
+    </div>
 
     <div class="modal_general"></div>
     
 </body>
-<script src="../estudiante/script/script.js"></script>
+<script src="/views/scriptEstudiante.js"></script>
 </html>

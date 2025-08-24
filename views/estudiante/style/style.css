@@ -502,8 +502,8 @@ hr {
 }
 
 .button3 {
-    color: 
-#ffffff;
+    color:
+        #ffffff;
     background-color: rgb(0, 0, 0);
     border: none;
     width: 120px;
@@ -512,4 +512,137 @@ hr {
     display: block;
     margin: 1vw;
     justify-self: center;
+}
+
+/*Contenedor perfil*/
+
+.profile-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #2b2b2b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ccc;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.profile-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.profile-section {
+    display: flex;
+    padding: 0 40px;
+    margin-bottom: 30px;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border: none;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.info-value {
+    color: #333;
+}
+
+.contact-section {
+    margin: 0 40px 30px 40px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-row:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-value {
+    color: #333;
+}
+
+.btn_perfil {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0099cc;
+}
+
+.btn_Guardar {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #00bfff;
+    border: none;
+    border-radius: 20px;
+    color: white;
 }
