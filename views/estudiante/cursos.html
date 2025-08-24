@@ -14,12 +14,12 @@
         </div>
         <nav>
             <a href="./inicio.html">Tablero</a>
-            <a href="./curso.html">Cursos</a>
-            <a href="./tareas.html">Actividades</a>
-            <a href="./progreso.html">Perfil</a>
+            <a href="/views/estudiante/cursos.html">Cursos</a>
+            <a href="/views/estudiante/actividades.html">Actividades</a>
+            <a href="/views/estudiante/perfil.html">Perfil</a>
         </nav>
-        <div class="perfil">
-            <img class="perfile" src="/img/perf.png" alt="iconoPerfil">
+        <div class="perfil" onclick="mostrarModalPerfil()" >
+            <img  class="perfile" src="/img/perf.png" alt="iconoPerfil">
             <p>Johan Perez</p>
         </div>
     </header>
@@ -76,9 +76,9 @@
         </article>
         
 
-
-
     </div>
+    <div class="modal_general"></div>
     
 </body>
+<script src="../estudiante/script/script.js"></script>
 </html>
