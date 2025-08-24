@@ -1,4 +1,4 @@
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -35,7 +35,7 @@ header a {
     transition: all 0.2s;
 }
 
-header h1{
+header h1 {
     color: white;
     margin-left: 20px;
     font-size: 1rem;
@@ -70,12 +70,12 @@ nav a {
     align-items: center;
 }
 
-.perfil p{
+.perfil p {
     color: white;
     font-size: 1rem;
 }
 
-.logos{
+.logos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,13 +84,13 @@ nav a {
     flex-direction: row;
 }
 
-.contenedor{
+.contenedor {
     max-width: 80vw;
     margin: 2vh auto;
     padding: 0 2vw;
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -102,7 +102,7 @@ h1{
     gap: 30px;
 }
 
-.tarjetas{
+.tarjetas {
     background: rgb(255, 255, 255);
     padding: 15px;
     text-align: left;
@@ -119,22 +119,22 @@ h1{
     flex-wrap: nowrap;
 }
 
-.tarjetas p{
+.tarjetas p {
     margin-top: 2rem;
     color: rgba(0, 186, 254, 1);
 }
 
-.cursosDiv .cursosCuadros{
+.cursosDiv .cursosCuadros {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.cursosDiv .cards{
+.cursosDiv .cards {
     height: 550px;
 }
 
-.cursosDiv .cards .cursitos{
+.cursosDiv .cards .cursitos {
     height: 65%;
     background: white;
     width: 100%;
@@ -148,26 +148,27 @@ h1{
     justify-content: space-between;
 }
 
-.cursitos img{
+.cursitos img {
     width: 350px;
     height: 140px;
     object-fit: cover;
     border-radius: 5px;
-    
+
 }
+
 .medio {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    
+
 }
 
 .medio h4 {
     margin: 0;
 }
 
-.medio h6{
+.medio h6 {
     font-size: 0.9rem;
     font-weight: 300;
 }
@@ -183,7 +184,7 @@ hr {
     width: 100%;
 }
 
-.btn-negro{
+.btn-negro {
     background-color: black;
     color: white;
     width: 8vw;
@@ -198,22 +199,22 @@ hr {
     text-decoration: none;
 }
 
-.btn-negro:hover{
+.btn-negro:hover {
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
 
-.notificaciones h1{
+.notificaciones h1 {
     margin: 0;
     margin-bottom: 10px;
 }
 
-.notificaciones .mensajes{
+.notificaciones .mensajes {
     display: flex;
     flex-direction: column;
 }
 
-.notificaciones .modulo{
+.notificaciones .modulo {
     display: flex;
     justify-content: space-between;
     background: #D9D9D9;
@@ -227,17 +228,17 @@ hr {
 
 /*Contenedor Curso de Video Juegos*/
 
-.contenedorJuegos{
+.contenedorJuegos {
     max-width: 80vw;
     margin: 3vh auto;
     padding: 0 10vw;
 }
 
-.cursoJuegos .cursitosj{
+.cursoJuegos .cursitosj {
     background-image: url(/img/Gamer.jpg);
     height: 25vh;
     background-position: center;
-    background-size: cover ;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
     width: 60vw;
@@ -257,37 +258,42 @@ hr {
     align-items: center;
     width: 30%;
 }
+
 .nivel h4 {
     margin: 0;
     font-weight: 300;
 }
+
 .cursitosj h5 {
     font-weight: 500;
 }
 
-.atras{
+.atras {
     width: 0px;
 }
-.atras img{
+
+
+.atras img {
     height: 40px;
     width: auto;
     margin-top: 20px;
     padding: 0 40px;
     cursor: pointer;
 }
-.atras img:hover{
+
+.atras img:hover {
     transform: scale(1.10);
     transition: all 0.3 ease;
 }
 
-.Botones-tres{
+.Botones-tres {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     margin-top: 40px;
 }
 
-.modulo-unico{
+.modulo-unico {
     margin-top: 40px;
     height: 65%;
     background: white;
@@ -301,12 +307,12 @@ hr {
     padding: 10px;
 }
 
-.modulo-unico h1{
+.modulo-unico h1 {
     margin: 2%;
     font-size: 2rem;
 }
 
-.modulo-unico p{
+.modulo-unico p {
     padding: 5vw;
     font-size: 1.5rem;
 }
@@ -314,11 +320,11 @@ hr {
 
 /*Contenido de Node*/
 
-.cursoJuegos .cursitosN{
+.cursoJuegos .cursitosN {
     background-image: url(/img/NodeJSimg.png);
     height: 25vh;
     background-position: center;
-    background-size: cover ;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
     width: 60vw;
@@ -331,12 +337,13 @@ hr {
     padding: 15px;
     justify-content: space-between;
 }
+
 /*Contenido CSS*/
-.cursoJuegos .cursitosC{
+.cursoJuegos .cursitosC {
     background-image: url(/img/cssfoto.jpg);
     height: 25vh;
     background-position: center;
-    background-size: cover ;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
     width: 60vw;
@@ -348,4 +355,59 @@ hr {
     flex-wrap: nowrap;
     padding: 15px;
     justify-content: space-between;
+}
+
+/*Modulo de Actividades*/
+
+.card {
+    background: white;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 15px;
+
+}
+
+.fecha {
+    color: #d40808;
+    padding: 5px 10px;
+    font-size: 12px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.subtitulo {
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+    color: #333;
+}
+
+.descripcion {
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background: #1e90ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 10px;
+    border-radius: 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #0066cc;
+}
+
+.tituloA h1 {
+    margin-top: 0%;
 }
