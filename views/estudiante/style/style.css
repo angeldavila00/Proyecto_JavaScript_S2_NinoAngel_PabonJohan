@@ -9,7 +9,7 @@ html{
 }
 
 body {
-    background-color: #EDEDED;
+    background-color: white;
 }
 
 header {
@@ -25,7 +25,6 @@ header {
     height: 40px;
     width: auto;
     cursor: pointer;
-    transition: all 0.3s;
 }
 
 header a {
@@ -132,7 +131,7 @@ h1{
 }
 
 .cursosDiv .cards{
-    height: 350px;
+    height: 550px;
 }
 
 .cursosDiv .cards .cursitos{
@@ -149,6 +148,13 @@ h1{
     justify-content: space-between;
 }
 
+.cursitos img{
+    width: 350px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
 .medio {
     display: flex;
     justify-content: space-between;
@@ -159,6 +165,11 @@ h1{
 
 .medio h4 {
     margin: 0;
+}
+
+.medio h6{
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 hr {
@@ -175,7 +186,7 @@ hr {
 .btn-negro{
     background-color: black;
     color: white;
-    width: 6vw;
+    width: 8vw;
     height: 6vh;
     border-radius: 50px;
     font-size: 0.9rem;
@@ -212,4 +223,129 @@ hr {
     border-radius: 4px;
     height: 70px;
 
+}
+
+/*Contenedor Curso de Video Juegos*/
+
+.contenedorJuegos{
+    max-width: 80vw;
+    margin: 3vh auto;
+    padding: 0 10vw;
+}
+
+.cursoJuegos .cursitosj{
+    background-image: url(/img/Gamer.jpg);
+    height: 25vh;
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    color: white;
+    width: 60vw;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.nivel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.nivel h4 {
+    margin: 0;
+    font-weight: 300;
+}
+.cursitosj h5 {
+    font-weight: 500;
+}
+
+.atras{
+    width: 0px;
+}
+.atras img{
+    height: 40px;
+    width: auto;
+    margin-top: 20px;
+    padding: 0 40px;
+    cursor: pointer;
+}
+.atras img:hover{
+    transform: scale(1.10);
+    transition: all 0.3 ease;
+}
+
+.Botones-tres{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.modulo-unico{
+    margin-top: 40px;
+    height: 65%;
+    background: white;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.modulo-unico h1{
+    margin: 2%;
+    font-size: 2rem;
+}
+
+.modulo-unico p{
+    padding: 5vw;
+    font-size: 1.5rem;
+}
+
+
+/*Contenido de Node*/
+
+.cursoJuegos .cursitosN{
+    background-image: url(/img/NodeJSimg.png);
+    height: 25vh;
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    color: white;
+    width: 60vw;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 15px;
+    justify-content: space-between;
+}
+/*Contenido CSS*/
+.cursoJuegos .cursitosC{
+    background-image: url(/img/cssfoto.jpg);
+    height: 25vh;
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    color: white;
+    width: 60vw;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 15px;
+    justify-content: space-between;
 }
