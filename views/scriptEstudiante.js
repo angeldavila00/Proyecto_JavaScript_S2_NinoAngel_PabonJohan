@@ -12,9 +12,9 @@ function mostrarModalPerfil() {
                     </div>
                     <div class="indice_content2">
                         <div class="i2">
-                            <a href="#"><button class="button3">Mi Perfil</button></a>
-                            <a href="/index.html"><button class="button3">Configuraciones</button></a>
-                            <a href="/index.html"><button class="button3">Cerrar Sesion</button></a>
+                            <a href="" ><button  class="button3" >Mi Perfil</button></a>
+                            <a href=""><button class="button3">Configuraciones</button></a>
+                            <a href=""><button class="button3">Cerrar Sesion</button></a>
                         </div>
                     </div>
                 </div>
@@ -30,6 +30,8 @@ function cerrarModal() {
     modal.innerHTML = '';
 }
 
+
+
 //Cerrar modal al hacer clic fuera 
 window.onclick = function(event) {
     const modal = document.querySelector('.modal_general');
@@ -41,31 +43,7 @@ window.onclick = function(event) {
 
 
 //Funcion de paginas
-/*
-function irATablero(){
-    setTimeout(() => {
-        window.location.href = './inicio.html';
-    }, 1000);
-}
 
-function irACursos(){
-    setTimeout(() => {
-        window.location.href = '/views/estudiante/cursos.html';
-    }, 1000);
-}
-
-function irAActividades(){
-    setTimeout(() => {
-        window.location.href = '/views/estudiante/actividades.html';
-    }, 1000);
-}
-
-function irAPerfil(){
-    setTimeout(() => {
-        window.location.href = '/views/estudiante/perfil.html';
-    }, 1000);
-}
-}*/
 function volverAtras(){
     window.history.back();
 }
@@ -111,6 +89,7 @@ function irACursos(pagina = 'inicio'){
     }, 1000);
 }
 
+//Actividades
 function irAActividades(pagina = 'inicio'){
     let url;
     
@@ -125,6 +104,7 @@ function irAActividades(pagina = 'inicio'){
         window.location.href = url;
     }, 1000);
 }
+//Perfil
 function irAPerfil(pagina = 'inicio'){
     let url;
     
@@ -157,7 +137,7 @@ function VerCursos(pagina = 'inicio'){
     }, 1000);
 }
 
-//examenes 
+//Boton de examenes 
 function VerExamenes(pagina = 'inicio'){
     let url;
     
