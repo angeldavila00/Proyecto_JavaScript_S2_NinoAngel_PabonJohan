@@ -21,7 +21,6 @@ function mostrarModalPerfil() {
             </div>
         </div>
     `;
-    
     modal.classList.add('show');
 }
 
@@ -42,7 +41,7 @@ window.onclick = function(event) {
 
 
 //Funcion de paginas
-
+/*
 function irATablero(){
     setTimeout(() => {
         window.location.href = './inicio.html';
@@ -66,15 +65,106 @@ function irAPerfil(){
         window.location.href = '/views/estudiante/perfil.html';
     }, 1000);
 }
-
+}*/
 function volverAtras(){
     window.history.back();
 }
 
 function verificacion(){
-    alert("Veficación exitosa!")
+    alert("Veficación exitosa!");
 }
 
 function guardado(){
-    alert("Guadado Con exito!")
+    alert("Guadado Con exito!");
+}
+
+//Tablero
+function irATablero(pagina = 'estudiante'){
+    let url;
+    
+    if(pagina === 'estudiante') {
+        url = '/views/estudiante/inicio.html';
+    } else if(pagina === 'docente') {
+        url = './Dinicio.html';
+    }else if(pagina == 'administrador'){
+        url = '/views/administrador/Ainicio.html'
+    }
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
+}
+
+
+//CURSOS
+function irACursos(pagina = 'inicio'){
+    let url;
+    
+    if(pagina === 'estudiante') {
+        url = './cursos.html';
+    } else if(pagina === 'docente') {
+        url = './estudiantes.html';
+    } else if(pagina == 'administrador'){
+        url = './cursosE.html';
+    }
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
+}
+
+function irAActividades(pagina = 'inicio'){
+    let url;
+    
+    if(pagina === 'estudiante') {
+        url = './actividades.html';
+    } else if(pagina === 'docente') {
+        url = './estudiantes.html';
+    } else if(pagina == 'administrador'){
+        url = './FALTA';
+    }
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
+}
+function irAPerfil(pagina = 'inicio'){
+    let url;
+    
+    if(pagina === 'estudiante') {
+        url = './perfil.html';
+    } else if(pagina === 'docente') {
+        url = './perfil.html';
+    } else if(pagina == 'administrador'){
+        url = './perfil.html';
+    }
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
+}
+
+//Funciones botones ver cursos
+
+function VerCursos(pagina = 'inicio'){
+    let url;
+    
+    if(pagina === 'desarrollo') {
+        url = './videoJuegos.html';
+    } else if(pagina === 'node') {
+        url = './node.html';
+    } else if(pagina == 'css'){
+        url = './css.html';
+    }
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
+}
+
+//examenes 
+function VerExamenes(pagina = 'inicio'){
+    let url;
+    
+    if(pagina === 'examen') {
+        url = './examenes.html';
+    } 
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
 }

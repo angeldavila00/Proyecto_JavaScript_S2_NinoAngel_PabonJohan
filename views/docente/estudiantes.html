@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../docente/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
@@ -15,12 +15,12 @@
             <h1>USD API</h1>
         </div>
         <nav>
-            <a href="#" onclick="irATablero()">Tablero</a>
-            <a href="#" onclick="irACursos()">Cursos</a>
-            <a href="#" onclick="irAActividades()">Actividades</a>
-            <a href="#" onclick="irAPerfil()">Perfil</a>
+            <a href="#" onclick="irATablero('docente')">Tablero</a>
+            <a href="#" onclick="irACursos('docente')">Estudiantes</a>
+            <a href="#FALTAAAA" onclick="irAActividades('docente')">Actividades</a>
+            <a href="#" onclick="irAPerfil('docente')">Perfil</a>
         </nav>
-        <div class="perfil">
+        <div class="perfil" onclick="mostrarModalPerfil()">
             <img class="perfile" src="/img/perf.png" alt="iconoPerfil">
             <p>Johan Perez</p>
         </div>
@@ -29,7 +29,7 @@
         <img onclick="volverAtras()" src="/img/atrasSinFondo.jpg" alt="">
     </button>
     <div class="container">
-        <h1 class="titulo">Estudiantes:</h1>
+        <h1 class="titulo1">Estudiantes:</h1>
 
         <div class="centro">
             <div class="izquierdo">
@@ -83,6 +83,7 @@
             </div>
         </div>
     </div>
+    <div class="modal_general"></div>
 </body>
-<script src="/views/scriptDocente.js"></script>
+<script src="/views/scriptEstudiante.js"></script>
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node Js</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
@@ -15,10 +15,10 @@
             <h1>USD API</h1>
         </div>
         <nav>
-            <a href="#" onclick="irATablero()">Tablero</a>
-            <a href="#" onclick="irACursos()">Cursos</a>
-            <a href="#" onclick="irAActividades()">Actividades</a>
-            <a href="#" onclick="irAPerfil()">Perfil</a>
+            <a href="#" onclick="irATablero('estudiante')">Tablero</a>
+            <a href="#" onclick="irACursos('estudiante')">Cursos</a>
+            <a href="#" onclick="irAActividades('estudiante')">Actividades</a>
+            <a href="#" onclick="irAPerfil('estudiante')">Perfil</a>
         </nav>
         <div class="perfil" onclick="mostrarModalPerfil()" >
             <img  class="perfile" src="/img/perf.png" alt="iconoPerfil">
@@ -42,9 +42,9 @@
                         <h5>Instructor del curso Dr. Angel Niño </h5>
                     </div>
                     <div class="Botones-tres">
-                        <button class="btn-negro">Actividades</button>
+                        <button onclick="irAActividades('estudiante')" class="btn-negro">Actividades</button>
                         <button class="btn-negro">Notas Del Curso</button>
-                        <button class="btn-negro">Examenes</button>
+                        <button onclick="VerExamenes('examen')" class="btn-negro">Examenes</button>
                     </div>
                     <div class="modulo-unico">
                         <h1>Descripcion general del curso</h1>

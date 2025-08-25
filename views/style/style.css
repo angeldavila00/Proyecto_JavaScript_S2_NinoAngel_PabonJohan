@@ -274,7 +274,6 @@ hr {
     width: 0px;
 }
 
-
 .atras img {
     height: 40px;
     width: auto;
@@ -631,10 +630,6 @@ hr {
     font-weight: bold;
 }
 
-.btn:hover {
-    background-color: #0099cc;
-}
-
 .btn_Guardar {
     display: block;
     margin: 0 auto 30px auto;
@@ -645,4 +640,111 @@ hr {
     border: none;
     border-radius: 20px;
     color: white;
+}
+
+/*Docente*/
+.container {
+    max-width: 1800px;
+    margin: 0 10%;
+}
+
+.flecha {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s;
+    color: #333;
+}
+
+.flecha:hover {
+    transform: translateX(-3px);
+}
+
+.titulo1 {
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+
+.izquierdo{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    gap: 1vw;
+    margin-top: 120px;
+}
+
+.centro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botonIzq {
+    background-color: #000;
+    color: white;
+    border-radius: 25px;
+    font-size: 0.8vw;
+    cursor: pointer;
+    text-align: center;
+    width: 8vw;
+    height: 3vw;
+}
+
+.botonIzq:hover {
+    background-color: #333;
+}
+
+.tablaC {
+    flex: 1;
+    background-color: transparent;
+    min-width: 900px;
+    margin: 0 4vw;
+}
+
+table {
+    width: 60vw;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+th {
+    background-color: transparent;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #999;
+    font-size: 1.2vw;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    font-size: 1.2vw;
+    background-color: transparent;
+}
+
+tr {
+    background-color: transparent;
+}
+
+.modificar {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.6vw;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modificar:hover {
+    background-color: #333;
 }

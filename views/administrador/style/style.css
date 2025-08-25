@@ -1,0 +1,330 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 5px 1%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+header a {
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    transition: all 0.2s;
+}
+
+header h1 {
+    color: white;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+
+nav {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.perfile {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s;
+    margin: 15px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.perfil p {
+    color: white;
+    font-size: 1rem;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.atras {
+    width: 0px;
+}
+
+.atras img {
+    height: 40px;
+    width: auto;
+    margin-top: 20px;
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+.atras img:hover {
+    transform: scale(1.10);
+    transition: all 0.3 ease;
+}
+
+/*Modal de Perfil sobrepuesto*/
+.modal_general {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_general img {
+    width: 30px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.modal_general.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.cerrar_modal {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    padding-right: 1vw;
+}
+
+.modal_header {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.indice_header {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.indice_header p {
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    color: #000;
+}
+
+.perfil2 {
+    position: fixed;
+    top: 82px;
+    right: 0;
+    width: 260px;
+    height: 260px;
+    background: white;
+    transition: left 0.5s ease;
+    box-shadow: 2px 0 20px black;
+    z-index: 1000;
+}
+
+.i2 {
+    padding: 0 1vw;
+}
+
+.i2 a {
+    text-decoration: none;
+}
+
+.button3 {
+    color:
+        #ffffff;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    display: block;
+    margin: 1vw;
+    justify-self: center;
+}
+
+/*cursos*/
+.contenedor {
+    max-width: 80vw;
+    margin: 2vh auto;
+    padding: 0 2vw;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.estadisticas .cuadros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tarjetas {
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 23vw;
+    height: 25vh;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.tarjetas p {
+    margin-top: 2rem;
+    color: rgba(0, 186, 254, 1);
+}
+
+.cursosDiv .cursosCuadros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cursosDiv .cards {
+    height: 550px;
+}
+
+.cursosDiv .cards .cursitos {
+    height: 65%;
+    background: white;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.cursitos img {
+    width: 350px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.medio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.medio h4 {
+    margin: 0;
+}
+
+.medio h6 {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+hr {
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-negro {
+    background-color: black;
+    color: white;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-negro:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.notificaciones h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
