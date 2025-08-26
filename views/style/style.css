@@ -35,6 +35,14 @@ header a {
     transition: all 0.2s;
 }
 
+
+header a:hover {
+    color: #2e88e9;
+    font-weight: bold;
+    transform: scale(1.09);
+    transition: all 0.3s ease;
+}
+
 header h1 {
     color: white;
     margin-left: 20px;
@@ -501,8 +509,7 @@ hr {
 }
 
 .button3 {
-    color:
-        #ffffff;
+    color:#ffffff;
     background-color: rgb(0, 0, 0);
     border: none;
     width: 120px;
@@ -511,8 +518,13 @@ hr {
     display: block;
     margin: 1vw;
     justify-self: center;
+    cursor: pointer;
 }
 
+.button3:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
 /*Contenedor perfil*/
 
 .profile-card {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/tareas.css">
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <img class="logo" src="/img/signopesos.png" alt="logito">
+            <h1>USD API</h1>
+        </div>
+        <nav>
+            <a href="#" onclick="irATablero('administrador')">Tablero</a>
+            <a href="#" onclick="irACursos('administrador')">Cursos</a>
+            <a href="#" onclick="irAActividades('administrador')">Actividades</a>
+            <a href="#" onclick="irAPerfil('administrador')">Perfil</a>
+        </nav>
+        <div class="perfil" onclick="mostrarModalPerfil()">
+            <img class="perfile" src="/img/perf.png" alt="iconoPerfil">
+            <p>Johan Perez</p>
+        </div>
+    </header>
+    <div class="titulo">
+        <h1>Crear Examen</h1>
+    </div>
+    <div class="nuevoT">
+        <div class="titulo">
+            <h1>Titulo:</h1>
+            <input type="text" placeholder="Nombre del proyecto">
+        </div>
+        <div class="contenido">
+            <h1>Descripcion:</h1>
+            <label for="descr"></label>
+            <textarea placeholder="Descripcion" name="descr" id=""></textarea>
+        </div>
+        <div class="boton">
+            <button>Subir</button>
+        </div>
+    </div>
+    <div class="modal_general"></div>
+</body>
+<script src="/views/scriptEstudiante.js"></script>
+</html>

@@ -1,8 +1,7 @@
-
 async function FecthDataLogin() {
     const res = await fetch('https://689b682058a27b18087b3817.mockapi.io/usuarios', {
         method: 'GET',
-        Headers: {
+        headers: {
             'Content-Type': 'application/json'
         }
     })
@@ -19,8 +18,10 @@ async function login() {
     const userIn = document.getElementById('usuario').value.trim();
     const passIn = document.getElementById('contrasena').value.trim();
 
+    let usuarioActual = null;
+
     data.forEach(dato => {
-        if (dato.nombre == userIn && dato.contrasena == passIn) {
+        if (dato.nombre == userIn && dato.contrasena == passIn) {   
             usuarioActual = dato
         }
     });
@@ -35,9 +36,9 @@ async function login() {
         } else if (usuarioActual.tipoUsuario  === 'administrador') {
             window.location.href = './views/administrador/Ainicio.html';
         }
+    } else{
+        alert('Usuario o Contraseña incorrectos');
     }
-
-
 
     return usuarioActual;
 }

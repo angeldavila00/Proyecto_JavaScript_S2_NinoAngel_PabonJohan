@@ -12,9 +12,9 @@ function mostrarModalPerfil() {
                     </div>
                     <div class="indice_content2">
                         <div class="i2">
-                            <a href="" ><button  class="button3" >Mi Perfil</button></a>
-                            <a href=""><button class="button3">Configuraciones</button></a>
-                            <a href=""><button class="button3">Cerrar Sesion</button></a>
+                            <a href="#" onclick="irAPerfil('estudiante')"><button  class="button3" >Mi Perfil</button></a>
+                            <a href="#"><button class="button3">Configuraciones</button></a>
+                            <a href="#" onclick="irAInicio()"><button class="button3">Cerrar Sesion</button></a>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,14 @@ window.onclick = function(event) {
     }
 }
 
+//ir al inicio (cerrar sesion)
 
+function irAInicio(){
+    let url = '/index.html';
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
+}
 
 //Funcion de paginas
 
