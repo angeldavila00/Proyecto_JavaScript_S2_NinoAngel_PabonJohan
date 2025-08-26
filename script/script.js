@@ -10,8 +10,6 @@ async function FecthDataLogin() {
     return data
 }
 
-
-
 async function login() {
     event.preventDefault()
     const data = await FecthDataLogin();
@@ -25,7 +23,6 @@ async function login() {
             usuarioActual = dato
         }
     });
-
 
     if (usuarioActual) {
         localStorage.setItem('usuarioactual', JSON.stringify(usuarioActual));
