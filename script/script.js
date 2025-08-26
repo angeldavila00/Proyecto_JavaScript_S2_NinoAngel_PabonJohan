@@ -28,11 +28,15 @@ async function login() {
         localStorage.setItem('usuarioactual', JSON.stringify(usuarioActual));
         if (usuarioActual.tipoUsuario === 'estudiante') {
             window.location.href = './views/estudiante/inicio.html';
+            alert("Bienvenido estudiante")
         } else if (usuarioActual.tipoUsuario  === 'docente') {
             window.location.href = './views/docente/Dinicio.html';
+            alert("Bienvenido docente")
         } else if (usuarioActual.tipoUsuario  === 'administrador') {
             window.location.href = './views/administrador/Ainicio.html';
+            alert("Bienvenido administrador")
         }
+        
     } else{
         alert('Usuario o Contraseña incorrectos');
     }
