@@ -144,6 +144,12 @@ nav a {
 .contenido {
     padding: 1vh 2vw;
 }
+.contenido p{
+    margin: 0 2px;
+    color: #6d6a6a;
+    width: 100%;
+
+}
 
 .contenido h1 {
     color: #000000;
@@ -158,16 +164,8 @@ nav a {
     margin-bottom: 1vh;
 }
 
-.contenido textarea {
-    width: 100%;
-    min-height: 20vh;
-    padding: 1vh 2vw;
-    border: 1px solid black;
-    border-radius: 1vw;
-    font-size: 1.5vw;
-    resize: vertical;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
+
 
 .boton {
     text-align: center;
@@ -294,4 +292,22 @@ nav a {
 .button3:hover {
     transform: scale(1.05);
     transition: all 0.3s ease;
+}
+
+/*CSS DE ESTILO DE LA FLECHA PARA ENVIAR A LA PAGINA ANTERIOR*/
+.atras {
+    width: 0px;
+}
+
+.atras img {
+    height: 40px;
+    width: auto;
+    margin-top: 20px;
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+.atras img:hover {
+    transform: scale(1.10);
+    transition: all 0.3 ease;
 }

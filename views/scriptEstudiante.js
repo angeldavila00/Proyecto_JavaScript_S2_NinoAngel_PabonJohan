@@ -58,9 +58,34 @@ function volverAtras(){
 function verificacion(){
     alert("Veficación exitosa!");
 }
-
+//aleta de guardado con exito
 function guardado(){
     alert("Guadado Con exito!");
+    setTimeout(() => {
+        window.location.href = './perfil.html';
+    }, 1000);
+}
+//aleta de enviado con exito y envia a la pagina de inicio
+function enviado(){
+    alert("Enviado Con exito!");
+    window.location.href = './inicio.html'
+}
+//funcion para enviar tarea y abrir el html de subir trabajo
+
+function enviarTarea(pagina = 'inicio'){
+    let url;
+    if(pagina === 'estudiante') {
+        url = './subirTrabajo.html';
+    } else if(pagina === 'docente') {
+        url = './crearTarea.html';
+    }else if (pagina == 'docente1')
+        url = './crearExamen.html'
+    else if(pagina == 'administrador'){
+        url = '..'
+    }
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
 }
 
 //Tablero
@@ -154,4 +179,11 @@ function VerExamenes(pagina = 'inicio'){
     setTimeout(() => {
         window.location.href = url;
     }, 1000);
+}
+
+
+//Actividades Docente
+
+function notasDocente(){
+    window.location.href = './notas.html'
 }

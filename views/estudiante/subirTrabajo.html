@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/tareas.css">
+    <link rel="stylesheet" href="../docente/style/tareas.css">
 </head>
 <body>
     <header>
@@ -23,24 +23,24 @@
             <p>Johan Perez</p>
         </div>
     </header>
+    <!--Boton para enviar la pagina atras -->
     <button class="atras">
         <img onclick="volverAtras()" src="/img/atrasSinFondo.jpg" alt="">
     </button>
     <div class="titulo">
-        <h1>Crear Examen:</h1>
+        <h1>Subir Contenido:</h1>
     </div>
     <div class="nuevoT">
         <div class="titulo">
-            <h1>Titulo:</h1>
-            <input type="text" placeholder="Nombre del proyecto">
+            <h1>Subir Repositorio:</h1>
+            <input type="text" placeholder="Enlace del Repositorio">
         </div>
         <div class="contenido">
             <h1>Descripcion:</h1>
-            <label for="descr"></label>
-            <textarea placeholder="Descripcion" name="descr" id=""></textarea>
-        </div>
+            <p>Pendiente</p>
+            </div>
         <div class="boton">
-            <button onclick="">Subir</button>
+            <button onclick="enviado()">Enviar</button>
         </div>
     </div>
     <div class="modal_general"></div>
